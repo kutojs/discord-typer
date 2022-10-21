@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>discordtyper</title>
+  <script src="js/index.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>discord-typer</h1>
+    <h2 id="typing">status: not typing</h2>
+
+    <div class="row">
+      <div>
+        <input id="cookie-input" style="width:350px;" placeholder="discord cookie"
+          spellcheck="false" type="password" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <input id="channel-input" style="width: 195px;" placeholder="channel id" spellcheck="false" />
+        <button id="channel-button" style="width:150px;" onclick="addchannel()">add channel</button>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <button id="start-typing" style="width:193px;" onclick="starttyping()">start typing</button>
+        <button id="stop-typing" style="width:193px;" onclick="stoptyping()">stop typing</button>
+      </div>
+    </div>
+
+    <ul id="channels">
+    </ul>
+  </div>
+</body>
+
+</html>
